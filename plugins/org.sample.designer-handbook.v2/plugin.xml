@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.sample.designer-handbook.v2">
+    <require plugin="org.sample.base"/>
+
+    <extension-point id="org.sample.designer-handbook-v2.xsl.strings" name="Designer Handbook V2 strings"/>
+
+    <feature extension="dita.conductor.transtype.check" value="designer-handbook-v2"/>
+    <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+
+    <!--  Designer Handbook V2 strings with relation to the common strings  -->
+    <feature extension="org.sample.designer-handbook-v2.xsl.strings" file="../org.sample.i18n/strings/common/strings.xml"/>
+    <feature extension="org.sample.designer-handbook-v2.xsl.strings" file="strings/designer-handbook-strings.xml"/>
+
+    <template file="strings/strings_template.xml"/>
+</plugin>

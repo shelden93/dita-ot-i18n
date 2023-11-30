@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dita2user-manual">
+
+    <target name="dita2user-manual" depends="build-init">
+        <xslt in="${args.input}" out="${dita.temp.dir}/debug.log"
+              style="${dita.dir}/plugins/org.sample.base/xsl/debug-message.xsl">
+            <param name="transtype" expression="${transtype}"/>
+            <param name="defaultLanguage" expression="${default.language}"/>
+            <param name="variableFiles.url" expression="${dita.dir}/plugins/org.sample.i18n/strings/user-manual/strings.xml"/>
+
+            <xmlcatalog refid="dita.catalog"/>
+        </xslt>
+    </target>
+</project>

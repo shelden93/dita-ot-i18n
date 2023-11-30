@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<langlist>
+    <dita:extension xmlns:dita="http://dita-ot.sourceforge.net"
+                    id="org.sample.common.xsl.strings"
+                    behavior="org.dita.dost.platform.InsertAntActionRelative"/>
+</langlist>

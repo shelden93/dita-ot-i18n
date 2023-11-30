@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.sample.i18n">
+    <extension-point id="org.sample.common.xsl.strings" name="Common strings"/>
+    <extension-point id="org.sample.designer-handbook.xsl.strings" name="Designer Handbook strings"/>
+    <extension-point id="org.sample.user-manual.xsl.strings" name="User Manual strings"/>
+
+    <!--  Common strings with relation to the common strings of DITA OT  -->
+    <feature extension="org.sample.common.xsl.strings" file="strings/common/common-strings.xml"/>
+    <feature extension="org.sample.common.xsl.strings" file="../../xsl/common/common-strings.xml"/>
+
+    <!--  Designer Handbook strings with relation to the common strings  -->
+    <feature extension="org.sample.designer-handbook.xsl.strings" file="strings/common/strings.xml"/>
+    <feature extension="org.sample.designer-handbook.xsl.strings" file="strings/designer-handbook/designer-handbook-strings.xml"/>
+
+    <!--  User Manual strings with relation to the common strings  -->
+    <feature extension="org.sample.user-manual.xsl.strings" file="strings/common/strings.xml"/>
+    <feature extension="org.sample.user-manual.xsl.strings" file="strings/user-manual/user-manual-strings.xml"/>
+
+    <template file="strings/common/strings_template.xml"/>
+    <template file="strings/designer-handbook/strings_template.xml"/>
+    <template file="strings/user-manual/strings_template.xml"/>
+</plugin>

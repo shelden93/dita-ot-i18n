@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dita2designer-handbook-v2">
+
+    <target name="dita2designer-handbook-v2" depends="build-init">
+        <xslt in="${args.input}" out="${dita.temp.dir}/debug.log"
+              style="${dita.dir}/plugins/org.sample.designer-handbook.v2/xsl/debug-message.xsl">
+            <param name="transtype" expression="${transtype}"/>
+            <param name="defaultLanguage" expression="${default.language}"/>
+            <param name="variableFiles.url" expression="${dita.dir}/plugins/org.sample.designer-handbook.v2/strings/strings.xml"/>
+
+            <xmlcatalog refid="dita.catalog"/>
+        </xslt>
+    </target>
+</project>
