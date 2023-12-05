@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="org.sample.designer-handbook.v2">
     <require plugin="org.sample.base"/>
+    <require plugin="org.sample.i18n"/>
 
     <extension-point id="org.sample.designer-handbook-v2.xsl.strings" name="Designer Handbook V2 strings"/>
 

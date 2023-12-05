@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="org.sample.designer-handbook">
     <require plugin="org.sample.base"/>
+    <require plugin="org.sample.i18n"/>
+
     <feature extension="dita.conductor.transtype.check" value="designer-handbook"/>
     <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
 </plugin>
